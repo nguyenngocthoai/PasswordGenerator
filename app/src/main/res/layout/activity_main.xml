@@ -26,7 +26,7 @@
 
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnGenerator"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
@@ -42,27 +42,27 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <CheckBox
-            android:id="@+id/checkBox4"
+            android:id="@+id/cb4"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginEnd="16dp"
             android:layout_marginTop="20dp"
             android:background="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+            app:layout_constraintTop_toBottomOf="@+id/cb3" />
 
         <CheckBox
-            android:id="@+id/checkBox2"
+            android:id="@+id/cb2"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginEnd="16dp"
             android:layout_marginTop="20dp"
             android:background="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+            app:layout_constraintTop_toBottomOf="@+id/cb1" />
 
         <CheckBox
-            android:id="@+id/checkBox3"
+            android:id="@+id/cb3"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginEnd="16dp"
@@ -70,10 +70,10 @@
             android:background="#FFFFFF"
             android:checked="true"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+            app:layout_constraintTop_toBottomOf="@+id/cb2" />
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/cb1"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginEnd="16dp"
@@ -81,11 +81,11 @@
             android:background="#FFFFFF"
             android:checked="true"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+            app:layout_constraintTop_toBottomOf="@+id/txtLengthPassword" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="337dp"
+            android:id="@+id/txtPassword"
+            android:layout_width="0dp"
             android:layout_height="52dp"
             android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
@@ -93,22 +93,25 @@
             android:background="#151537"
             android:ems="10"
             android:inputType="textPersonName"
+            android:textColor="#FAFAFA"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="93dp"
-            android:layout_height="34dp"
+            android:id="@+id/txtLengthPassword"
+            android:layout_width="136dp"
+            android:layout_height="38dp"
             android:layout_marginEnd="16dp"
             android:layout_marginTop="24dp"
             android:background="#FFFCFC"
             android:ems="10"
+            android:gravity="center"
             android:inputType="textPersonName"
+            android:textColor="#090808"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+            app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
 
         <TextView
             android:id="@+id/textView5"
@@ -118,8 +121,8 @@
             android:text="Include number"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/checkBox3"
-            app:layout_constraintEnd_toStartOf="@+id/checkBox3"
+            app:layout_constraintBaseline_toBaselineOf="@+id/cb3"
+            app:layout_constraintEnd_toStartOf="@+id/cb3"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -131,8 +134,8 @@
             android:text="Include special symbol"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/checkBox4"
-            app:layout_constraintEnd_toStartOf="@+id/checkBox4"
+            app:layout_constraintBaseline_toBaselineOf="@+id/cb4"
+            app:layout_constraintEnd_toStartOf="@+id/cb4"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -144,8 +147,8 @@
             android:text="Include lower case letters"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/checkBox"
-            app:layout_constraintEnd_toStartOf="@+id/checkBox"
+            app:layout_constraintBaseline_toBaselineOf="@+id/cb1"
+            app:layout_constraintEnd_toStartOf="@+id/cb1"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -173,7 +176,7 @@
             android:text="Password length"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/editTextTextPersonName2"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtLengthPassword"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
@@ -184,8 +187,8 @@
             android:text="Include upcase letters"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/checkBox2"
-            app:layout_constraintEnd_toStartOf="@+id/checkBox2"
+            app:layout_constraintBaseline_toBaselineOf="@+id/cb2"
+            app:layout_constraintEnd_toStartOf="@+id/cb2"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
